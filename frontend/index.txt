@@ -1,1 +1,1 @@
-the front end react app will go here
+NEXT JS 13 will be installed here
