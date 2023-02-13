@@ -1,31 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                olive: '#8c8512',
-                red: '#b10d05',
-                yellow:'#daae0c'
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/1df20da031.css" crossorigin="anonymous">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#887E7E',
+            red: '#FF0000',
+            grey:'#dddddd',
+            white: '#ffffff',
+            black: '#000000',
+            green: '#7CFC00',
+            greens: '#7CFCF0',
+            slate:'#666666'
+            
           }
         }
-      </script>
-    <title>Innovar</title>
+      }
+    }
+  </script>
 </head>
-<body>
-    <div class="bg-black h-2/3 w-full">
-        <h1 class="text-yellow">Hello World</h1>
-        <p class="text-red">We are ready</p>
-        <p class="text-olive">We are ready</p>
-    </div>
+<body class="bg-grey">
+  
+
+        <div class=" bg-white px-[30%] h-screen lgw-[90%] lg:mx-[5%] pt-[10%]  ">
+            <div class="flex-col flex ml-auto mr-auto mt-40 lg:mt-auto items-center w-full">
+            <h1 class="text-center font-bold   text-clifford text-4xl mb-5 "> Sign In</h1>
+
+            <form class="flex flex-col gap-3 lg:gap-6 border border-1 border-slate shadow-2xl  relative p-6 lg:p-20  h-[300px] w-[400px] pt-8 lg:h-[429px] lg:w-[624px] lg:pt-20 items-center" >
+                
+                    <div class=" flex pl-1 pr-8 mt-1  mx-auto border border-1 border-slate w-full ">
+                        <div class="flex  justify-center  p-4  mr-3">
+                           
+                            <img className="w-3 h-3" src="./img/icons8-secured-letter-50.png"/>
+                            </span>
+                          </div>
+
+                        <input type="text" 
+                        class=" flex-shrink flex-grow flex-auto leading-normal w-[100%] h-[58px]  placeholder-slate text-2xl  outline-none"
+                        placeholder="Email">
+                            
+                    </div>
+                    <div class="flex pl-1 pr-8 mt-1  mx-auto border border-1 border-slate w-full">
+                        <div class="flex  justify-center  p-4  mr-3">
+                            
+                            <img className="w-4 h-4" src="./img/icons8-secure-50.png"/>
+                            
+                        </div>
+
+                        <input type="text" 
+                        class=" flex-shrink flex-grow flex-auto leading-normal w-[100%] h-[58px]  placeholder-slate text-2xl  outline-none"
+                        placeholder="Password">
+                    </div>
+                    <div class="pl-6 pr-8">
+
+                        <button 
+                        class=" w-auto h-auto px-5 py-3 lg:px-[80px] lg:py-4 bg-green hover:bg-greens border border-1 border-slate my-3 font-bold text-xl  items-center"> Sign In</button>
+                    </div>
+                    
+                    
+                    <div>
+
+
+                
+            </form>
+        </div>
+        </div>
+    
+    
+  
+
+
 </body>
 </html>
