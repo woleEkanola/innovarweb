@@ -9,23 +9,101 @@
     <script>
         tailwind.config = {
           theme: {
+
+            fontFamily: {
+           
+           serif: [ 'Microsoft YaHei',],
+           holo: ['IBM Plex Sans' ,'sans-serif',],
+           modo:[ 'Helvetica'],
+           dele:['roboto', 'arial', 'sans-serif']
+
+           
+         },
             extend: {
               colors: {
                 olive: '#8c8512',
                 red: '#b10d05',
-                yellow:'#daae0c'
+                green: '#0FFF50',
+                purple:'#BF40BF',
+                yellow:'#daae0c',
+                gray:'#808080',
+                white:'#F5F5F5',
+                silver:'#c6c3c3'
+
               }
             }
           }
         }
       </script>
     <title>Innovar</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    <script src="https://kit.fontawesome.com/25d5a17604.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div class="bg-black h-2/3 w-full">
-        <h1 class="text-yellow">Hello World</h1>
-        <p class="text-red">We are ready</p>
-        <p class="text-olive">We are ready</p>
-    </div>
+
+
+
+<body class="bg-yellow">
+
+
+    <nav class="py-5 px-20 bg-black shadow  h-26 top-0 sticky z-0 md:flex md:items-center md:justify-between "  >
+
+          <div class="flex justify-between items-center">
+              <span class="cursor-pointer">
+                  <img class="h-16 inline" src="./images/logo/innovar.png">
+              </span>
+
+              <span class="text-3xl cursor-pointer mx-1 md:hidden block">
+                <i class='bx bx-menu  text-white' name="Menu" onclick="Menu(this)"></i>
+              </span>
+          </div>
+            
+
+          <ul class="md:flex md:items-center z-[-1] md:z-auto 
+            md:static absolute  w-full left-0 md:w-auto 
+            md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0
+            top-[-400px] transition-all ease-in duration-500  ">
+          
+              <li class="mx-4 my-6 md:my-0"> 
+                  <a href="" class="text-xm text-yellow hover:text-yellow duration-500">TechLeague</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                  <a href=""class="text-xm text-purple hover:text-yellow duration-500">TechFestival</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                  <a href="" class="text-xm text-green hover:text-yellow duration-500">GrowthHub</a>
+              </li>
+
+              <span class="text-black mx-4">
+                  Menu<i class='bx bx-menu text-black' ></i>
+              </span>
+              
+          </ul>
+  </nav>
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+
+      e.name === 'Menu'? (e.name = "close",list.classList.
+      add ('top-[100px]'), list.classList.add('opacity-100')
+      ): (e.name = "Menu" ,list.classList.remove('top-[10px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+<!-- banner part-->
+    
+  
+  <div class=" bg-black 
+              md:pl-64 pt-4 h-[500px] pt-40  
+              lg: pl-20 h-[724px] pt-56">
+          <p class="text-white font-serif  md: text-[30px] lg:text-[10px]">we are </p>
+          <h1 class="text-white text-[100px] font-medium font-serif text-silver leading-[100px] md: text-[50px] leading-[50px]">INNOVAR</h1>
+          <p class="text-white text-[25px] font-serif  md: text-[15px]"><span class="text-yellow">We implement technology products that fit into your <br>business process seamlessly.</span> We can build custom made<br>
+          tools as well as deploy off-th shelf products.</p>
+          <p> operation issues.</p>
+  </div>
+
 </body>
 </html>

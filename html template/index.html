@@ -8,10 +8,17 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <script>
         tailwind.config = {
-
+          theme: {
+           fontFamily: {
+           
+            serif: [ 'Microsoft YaHei',],
+            holo: ['IBM Plex Sans' ,'sans-serif',],
+            modo:[ 'Helvetica'],
+            dele:['roboto', 'arial', 'sans-serif']
 
             
-          theme: {
+          },
+
             extend: {
               colors: {
               
@@ -21,76 +28,130 @@
                 purple:'#BF40BF',
                 yellow:'#daae0c',
                 gray:'#808080',
+                white:'#F5F5F5',
+                silver:'#c6c3c3'
 
               }
             }
           }
         }
       </script>
+
     <title>Innovar</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
     <script src="https://kit.fontawesome.com/25d5a17604.js" crossorigin="anonymous"></script>
    
 </head>
-<body class="w-[100%] h-[100%] m-0 p-0 font-[-apple-system, BlinkMacSystemFont, PingFang SC, Helvetica, Tahoma, Arial, Microsoft YaHei, 微软雅黑, sans-serif;]">
-    <!--default Understanding 
 
-    <div class="bg-black h-2/3 w-full">
-        <h1 class="text-yellow">Hello World</h1>
-        <p class="text-red">We are ready</p>
-        <p class="text-olive">We are ready</p>
-    </div>
--->
+<body class=" p-0 m-0 no-underline list-none scroll-smooth">
+
+
+    <header class="py-5 px-11 bg-black shadow  h-26 top-0 sticky z-[1px] md:px-28 md:flex md:items-center md:justify-between"  >
+
+          <div class="flex justify-between items-center">
+              <span class="cursor-pointer">
+                  <img class="h-16 inline" src="./images/logo/innovar.png">
+              </span>
+
+              <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+
+                <i class='bx bx-menu  text-white' name="Menu" onclick="Menu(this)"></i>
+              </span>
+
+          </div>
+            
+        <nav>
+          <ul class=" font-serif md:flex md:items-center z-[-1] md:z-auto 
+            md:static absolute  w-4/12 right-20 md:w-auto 
+            md:py-0 py-2 md:pl-0 pl-0 md:opacity-100 opacity-0
+            top-[-400px] transition-all ease-in duration-500 ">
+          
+              <li class="mx-4 my-6 md:my-0"> 
+                  <a href="" class="text-xm text-yellow hover:text-white duration-500">TechLeague</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                  <a href=""class="text-xm text-purple hover:text-white duration-500">TechFestival</a>
+              </li>
+              <li class="mx-4 my-6 md:my-0">
+                  <a href="" class="text-xm text-green hover:text-white duration-500">GrowthHub</a>
+              </li>
+              
+
+
+              
+          </ul>
+
+          </nav>
+    </header>
+
+
+  
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+
+      e.name === 'Menu'? (e.name = "close",list.classList.
+      add ('top-[100px]'), list.classList.add('opacity-100')
+      ): (e.name = "Menu" ,list.classList.remove('top-[10px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+
+  
+
+
+<!-- banner part-->
+
+        <div class=" bg-black pl-64 pt-4 h-[100vh] pt-56">
+                <p class="text-white font-serif text-5xl ">we are </p>
+                <h1 class="text-white text-[100px] font-medium font-serif text-silver leading-[100px] ">INNOVAR</h1>
+                <p class="text-white text-[25px] font-serif "><span class="text-yellow">We implement technology products that fits into your <br>business process seamlessly.</span> We can build custom made<br>
+                tools as well as deploy off-th shelf products.</p>
+                <p class="text-white font-serif text-2xl"> operation issues.</p>
+   
+        </div>
      
    
-<!--header-->
-     <div class=" flex justify-between items-center bg-black  h-26 top-0 sticky z-0 p-5 w-[100%] max-w-screen-2xl">
 
-            
-            <img src="./images/logo/innovar.png"  alt="logo" class="w-[90px] ml-20 min ">
-           
+        <div >
 
-            
-              <div class=" flex mr-[110px]">
-                
-                    <ul class="flex mr-28 text-[14px] ">
-                        <li class="p-3  text-yellow hover:text-white "><a href="" > TechLeague </a></li>
-                        <li class="p-3 text-purple hover:text-white" ><a href=""> TechFestival </a></li>
-                        <li class="p-3 text-green hover:text-white"><a href=""> GrowthHub </a></li>
-                    </ul>
+        <p class=" fixed bottom-11 right-[80px] text-red rounded-full bg-white text-center  w-[80px] h-[80px] text-[15px]  pt-5"> </p>
 
-                    <div><p class=" text-white"> <span class="font-medium relative bottom-3"> Menu </span> <i class='bx bx-menu text-4xl text-white cursor-pointer' ></i></p></div>      
-              </div>
-              
-      </div>
+        <p class="fixed bottom-7 right-[50px] text-red rounded-full py-[11px] bg-white w-[90px] h-[90px] text-[10px] font-serif "> We are <br> online </p> 
 
-     <!--innovar container-->
+        <a href="" class="fixed bottom-7 right-[3%] text-red rounded-full py-[10px]  w-[90px] h-[90px] text-[5px]"><i class='bx bx-chat text-5xl py-[15px] pl-6'></i></a>
 
-            <div class=" bg-black h-[100%] pl-64 pt-56 ">
-                    <p class="text-white text-6xl">we are </p>
-                    <h1 class="text-white text-8xl font-medium leading-none">INNOVAR</h1>
-                    <p class="text-white text-2xl leading-tight"><span class="text-yellow">We implement technology products that fit into your <br>business process seamlessly.</span> We can build custom made<br>
-                    tools as well as deploy off-th shelf products.</p>
-                    <p> operation issues.</p>
-            </div>
+       </div>
 
 
-     <div class="bg-black h-40"></div>
+     <div class=" w-full block h-[80vh] bg-no-repeat bg-cover" style=" background-image: url(./images/hi.jpg) ">
 
-   
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class=" block "><path fill="bg-black" fill-opacity="1" 
+            d="M0,128L48,149.3C96,171,192,213,288,224C384,235,480,213,576,192C672,171,768,149,864,160C960,171,1056,213,1152,
+            218.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,
+            0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+          
+     </div>
+
      <!--yellow part container -->
-
-     <div class="bg-yellow h-[1200px] pl-[260px] pr-64">
-
+   
+        
+     <div class="bg-yellow m-auto h-[1200px] ">
+  
+     >
         <!--project/image part  -->
 
-            <div class="  pt-20">
-                <p class="pb-4 text-[20px] font-normal">Check out a few of our PROJECTS</p> 
-                <img src="./Images/bbmw app.jpg" class=" h-[380px]">
+            <div class="  pt-20 pl-[240px]" >
+                <p class="pb-4 text-[20px] font-normal font-serif ">Check out a few of our PROJECTS</p> 
+                <img src="./Images/bbmw app.jpg" class=" h-[380px] bg-no-repeat">
             </div>
 
 
-            <div class="flex font-normal text-xl pt-4 " >
+            <div class="flex font-normal text-xl pt-4  pl-[240px]" >
                 <div><p>Book by MagicWand</p></div>
                 <div class=" pl-36 pr-6 text-red"><p>Custom Software Solution</p></div>
                 <div class="pl-11 text-red border-red border-l-2"><p> UI/UX</p></div>
@@ -100,10 +161,10 @@
           <!--deploy/card part -->
 
 
-            <h1 class="pt-[130px] pb-5 font-medium text-[27px]"> Scenarios we can deploy our expertise:</h1>
+            <h1 class="pt-[130px] pl-[240px] pb-5 font-medium text-[27px]"> Scenarios we can deploy our expertise:</h1>
            
 
-            <div class="flex gap-8 ">
+            <div class="flex justify-between px-[240px] py-[15px] gap-8 ">
 
                     <div class="bg-[#f2e6bc] ">
                         <img src="./Images/download.jpg" class="p-2 w-[300px]">
@@ -118,7 +179,7 @@
 
 
                     <div class="bg-[#f2e6bc] ">
-                        <img src="./Images/download.jpg" class="p-2 w-[300px]">
+                        <img src="./Images/zapier-connector.png" class="p-2 w-[300px]">
 
                                 <div class="pl-5"> 
                                     <p class="text-xl p-2 font-medium">Task Automation</p>
@@ -129,10 +190,10 @@
                     </div>
 
                     <div class="bg-[#f2e6bc] ">
-                        <img src="./Images//download.jpg " class="p-2 w-[300px]">
+                        <img src="./Images/best_email_apps.jpg " class="p-2 w-[300px]">
 
                             <div class="pl-5"> 
-                                <p class="text-xl p-2 font-medium">Business Emails</p>
+                                <p class="text-xl pt-6 p-2 font-medium">Business Emails</p>
                                 <p class=" w-[260px] text-[12px] text-justify tracking-[1.0px]  leading-5 pl-2 pr-2 pt-1 font-medium" >We are designers, developers, writers, thinkers and problem solvers. Small enough to be simple and fast, but big enough to diliver youe
                                     scopeat.....</p>
                                 <button class="pr-2 pl-2 text-[14px] font-bold pt-2 pb-4"> Read More...</button>
@@ -140,15 +201,18 @@
                     </div>
             </div>
 
-
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class=" block"><path fill="#daae0c" fill-opacity="1" d="M0,128L48,149.3C96,171,192,213,288,224C384,235,480,213,576,192C672,171,768,149,864,160C960,171,1056,213,1152,218.7C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
     </div>
+
+
+
 
     <!--who we are container -->
 
         <div class="pt-[160px] pl-[190px] text-gray">
 
-            <h1 class="text-[60px] text-olive/60">Who we are...</h1>
-            <p class="text-[28px] max-w-[700px]">We are designers, developers, writers, thinkers, and problem solvers. Small enough  to be simple and fast,
+            <h1 class="text-[60px] font-modo mt-[220px] text-olive/60">Who we are...</h1>
+            <p class="text-2xl font-holo text-[#949191]  tracking-wider leading-normal max-w-[700px]">We are designers, developers, writers, thinkers, and problem solvers. Small enough  to be simple and fast,
                 but big enough to  deliver your project scope at the pace you need.  You can learn more about us, check the latest on Instagram and Twitter or apply to join our team. </p>
         </div>
 
@@ -159,29 +223,29 @@
 
 
 
-    <!--innovars creed container -->
-
-    <div class="bg-red h-[70vh] flex justify-center items-center pl-[64px] pr-[70px]">
-
-                <div class="w-[49%] pr-16 text-right text-xl text-pink-100/50">
-
-                    <p >Our goal is to proffer lasting, scalable and affordable tech solutions to our clients business problems, at the heart 
-                        of our operations is understanding the clients modus <br>operandi and their end game,thereby our solutions will feel natural and easy to use for their staffs.</p>
-                    
-                </div>
+    <!--innovars creed container-->
 
 
-                <div class="text-7xl pl-16 border-pink-100/50 border-l-4 text-pink-100/50">
+    <div class=" bg-red h-[100vh] pl-[64px] pr-[70px] flex justify-center items-center">
 
-                    <p>innovar's <br> CREED </p>
-                    
-                </div>
+        <span class="w-[45%] pr-16 text-right font-dele text-[21px] leading-[35px] text-[#ffffff] opacity">
+            <p class="text-white">
+                Our goal is to proffer lasting, scalable and affordable tech solutions to our clients business problems, at the heart 
+                of our operations is understanding the clients modus <br>operandi and their end game, thereby our solutions will <br>feel
+                 natural and easy to use for their staffs.
+            </p>
+        </span>
+
+        <span class="text-8xl pl-16 font-dele border-[#ffffff] border-l-4 text-[#ffffff] opacity-0.4" >
+            <p class="text-white"> innovar's <br> CREED</p>
+        </span>
+
     </div>
 
 
    <!--footer container -->
 
-    <div class=" bg-black h-[40vh] flex justify-between items-center pl-4 pr-11 pt-4 ">
+    <div class=" bg-black h-[50vh] flex justify-between m-0 items-center pl-4 pr-11 pb-16">
 
             <div class="w-[200px] "><img src="./Images/logo/innovar white text.png" >
 
@@ -220,5 +284,7 @@
 
     </div>
 
-</body>
+
+      
+</body> 
 </html>
