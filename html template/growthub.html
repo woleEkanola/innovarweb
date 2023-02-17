@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growthub</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script>
+        tailwind.config = {
+          theme: {
+
+            
+            extend: {
+
+                fontFamily: {
+           
+           serif: [ 'Microsoft YaHei',],
+           holo: ['IBM Plex Sans' ,'sans-serif',],
+           modo:[ 'Helvetica'],
+           dele:['roboto', 'arial', 'sans-serif'],
+           led: ['OPPO Sans']
+
+          
+        },
+              colors: {
+                olive: '#8c8512',
+                red: '#b10d05',
+                green: '#0FFF50',
+                purple:'#BF40BF',
+                yellow:'#daae0c',
+                gray:'#808080',
+                white:'#F5F5F5',
+                silver:'#c6c3c3',
+                deem:'#082c04',
+                light:'#9cc824'
+
+              }
+            }
+          }
+        }
+      </script>
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"> 
+    <script src="https://kit.fontawesome.com/25d5a17604.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body class="m-0 p-0 ">
+    
+ 
+
+    <!--header -->
+    <header class="bg-deem py-3 px-28 shadow h-16 top-0  z-[1px] flex justify-between items-center w-[100%]">
+
+        <div class="flex justify-between items-center">
+            <span class="cursor-pointer">
+                <img class="h-16 inline" src="./growthub assets/growthubWhite.png">
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+
+              <i class='bx bx-menu  text-white' name="Menu" onclick="Menu(this)"></i>
+            </span>
+
+        </div>
+
+        <nav>
+            <ul class=" flex justify-between text-white font-serif">
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> How it works</a></li>
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> About us</a></li>
+                <li class="mx-4 my-6"><a href="./index.html" class=" text-[11px] hover:text-yellow "> Learning Paths</a></li>
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Pricing</a></li>
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Sign Up</a></li>
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Sign in</a></li>
+                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!--chat-->
+
+    <div >
+
+      <p class=" fixed bottom-11 right-[50px] text-red rounded-full bg-white text-center  w-[80px] h-[80px] text-[15px]  pt-5"> </p>
+
+      <p class="fixed bottom-7 right-[30px] text-red rounded-full py-[11px] bg-white w-[90px] h-[90px] text-[10px] font-serif "> We are <br> online </p> 
+
+      <a href="" class="fixed bottom-3 right-[2%] text-red rounded-full py-[10px]  w-[90px] h-[90px] text-[5px]"><i class='bx bx-chat text-5xl py-[15px] pl-6'></i></a>
+
+   </div>
+
+   
+    <!--banner -->
+
+    <div class=" flex justify-between pb-72 bg-light h-[100vh] ">
+
+        <div class=" pt-72 pl-32 ">
+
+            <span class="text-8xl font-thin">Learn to Code </span>
+
+            <p class=" text-4xl ">  We have organised all the content you <br>need to become a 
+              <span class="text-red">Frontend Developer </span><br>in one place.</p></p>
+
+            <!--<span class=" text-4xl pl-40 ">
+            <p class="font-thin"> We have organised all the content you <br>need to become a 
+              <span class="text-red">Frontend Developer </span><br>in one place.</p></span>
+            -->
+        </div>
+
+
+        <span class="  pr-56">
+          <img src="./growthub assets/blob (3).png" alt="banner image" class="h-[800px] static absolute right-0 bottom-1 top-14 bg-no-repeat">
+      </span>
+
+        <span class="  pr-56">
+            <img src="./growthub assets/3d-business-man.png" alt="banner image" class="h-[360px] static absolute right-56 bottom-1 top-72">
+        </span>
+
+    </div>
+
+    <!-- form part-->
+      
+  <div class=" h-[140px]  w-aut0 pl-40 py-14 bg-[#450303] ">
+      
+      <input type="text" name="name" id="name" placeholder="E-mail " class="w-[320px] h-[40px] pl-6 text-[13px] font-normal text-gray font-medium 
+      cursor-[pointer] outline-sky-500  outline-[1px] " >
+
+      <input type="text" name="name" id="name" placeholder="Password " class="w-[320px] h-[40px] ml-2 pl-6 text-[13px] font-normal text-gray font-medium 
+      cursor-[pointer] outline-sky-500  outline-[1px] " >
+
+      <button" class=" ml-5 p-2  px-28 text-[16px]  font-normal bg-red text-[#FFFFFF] font-medium 
+      cursor-[pointer] outline-sky-500  outline-[1px] "> Sing Up </button>
+
+  </div>
+
+  <div class="bg-[#630000] pt-16 px-40 h-[350px]">
+    <p class="text-[40px] leading-11 text-white ">Learn at your own pace, Build Projects, Track your progress<br> easily, access to mentors, Get Certification this is your<br><span class="text-[#6eab0f] ">GROWTHUB...</span></p>
+  </div>
+
+  <!-- card part--> 
+ 
+  <div class=" bg-[#FFFFFF] flex items-center justify-between gap-[120px] px-[153px] py-[140px]">
+
+                    <div class="">
+                      <img src="./growthub assets/pexels-mikhail.jpg" alt="code image" class="h-[900px]  w-500px bg-no-repeat">
+                  </div>
+
+                    <!--grid general div -->
+
+        <div class=" pb-36"> 
+             
+         <h3 class="text-5xl font-medium pb-16 text-gray">Pathways available</h3>
+                        
+                        <!--fisrt grid-->
+                      <div class=" grid grid-cols-2 gap-8 ">
+
+                            <div class=" w-[245px] h-[305px] bg-[#FFFFFF] transition-unset drop-shadow-md ">
+
+                                      <span class=" ">
+                                        <img src="./growthub assets/vis-frontend-1.png" class=" h-[123px] p-5">
+                                      </span>
+
+                                          <div class=" pl-3  bg-[#fff8f8]"> 
+                                                <p class="text-xl pt-2 font-medium"> <a  href="" class="cursor-pointer"><span class=" text-red"> Fontedend<br> Development</span> </a></p>
+                                                <p class=" text-sm pt-10 pb-2"> <span class="pr-2 border-r-2">10 Course</span> <span class="pl-4">3 Projects</span> <br> <span class="pt-10"> 1 Certification</span></p>
+                                                
+                                          </div>
+
+                                        <button class=" bg-[#6eab0f] py-1 px-[73px] text-white text-[20px] font-bold "> Ernol Now</button>
+                             </div>
+                          
+                          
+                              <div class=" w-[245px] h-[305px] bg-[#FFFFFF] transition-unset drop-shadow-md ">
+
+                                                <span class=" ">
+                                                  <img src="./growthub assets/nodejs.jpg" class=" h-[123px] pl-16 py-5 ">
+                                                </span>
+
+                                                  <div class=" pl-3 bg-[#fff8f8]"> 
+                                                        <p class="text-xl pt-2 font-medium"> <span class=" text-red"> Backend Development Javascript</span></p>
+                                                        <p class=" text-sm pt-10 pb-2"> <span class="pr-2 border-r-2 ">10 Course</span> <span class="pl-4">3 Projects</span> <br> <span class="pt-10"> 1 Certification</span></p>
+                                                        
+                                                  </div>
+                                        <button class=" bg-[#6eab0f] py-1 px-[73px] text-white text-[20px] font-bold "> Ernol Now</button>
+                              </div>
+                      </div>
+
+                                <!--second grid-->
+
+                      <div class=" grid grid-cols-2 gap-8 mt-[50px]">
+
+                                  <div class=" w-[245px] h-[305px] bg-[#FFFFFF] pt-5 transition-unset drop-shadow-md ">
+
+                                              <span class="">
+                                                <img src="./growthub assets/ui.png" class=" h-[123px] pl-[50px] ">
+                                              </span>
+
+                                              <div class=" pl-3  bg-[#fff8f8]"> 
+                                                    <p class="text-xl pt-2 font-medium"> <span class=" text-red">UI/UX Design </span></p>
+                                                    <p class=" text-sm pt-10 pb-2"> <span class="pr-2 border-r-2">10 Course</span> <span class="pl-4">3 Projects</span> <br> <span class="pt-10"> 1 Certification</span></p>
+                                                    
+                                              </div>
+
+                                              <button class=" bg-[#6eab0f] py-1 px-[73px] text-white text-[20px] font-bold "> Ernol Now</button>
+                                  </div>
+                      
+
+
+                      
+                                  <div class=" w-[245px] h-[305px] bg-[#FFFFFF] pt-5 transition-unset drop-shadow-md ">
+
+                                              <span class="">
+                                                <img src="./growthub assets/python.png" class=" h-[123px] pl-[50px]  ">
+                                              </span>
+
+                                                <div class=" pl-3 pt-1 bg-[#fff6f6]"> 
+                                                      <p class="text-xl font-medium"> <span class=" text-red">Back Development Python</span></p>
+                                                      <p class=" text-sm pt-4 pb-2 "> <span class="pr-2 border-r-2">7 Courses</span> <span class="pl-4">3 Projects</span> <br>  1 Certification</p>
+                                                      
+                                                </div>
+
+                                                <button class=" bg-[#6eab0f] py-1 px-[73px] text-white text-[20px] font-bold "> Ernol Now</button>
+                                  </div>
+                      </div>
+                 <!--end of second grid-->
+          </div>                            
+
+  </div>
+
+      <!--how it works-->
+
+      <div class=" bg-[#fff6f6] h-96 ">
+
+                <div class=" px-52 py-28">
+                  
+                  <h4 class="text-7xl text-[#be2828] text-center">How it works...</h4>
+
+                   <p class="text-[47px] text-left pt-9 leading-80 scale-50 origin-top-left transition-unset absolute w-[2304px] min-w-[2304px]">Sign up, select a pathway, start learning, get mentored while you learn, and build real-life projects. we have an easy-to-use interface that makes it easy for you to track your own progress. Our professional mentors are available to guide you when you get stuck. Ultimately at the end of the day, you have a bunch of projects and a certification in your bag.</p>
+
+                </div>
+
+           
+ <!-- Parent div-->   <div  class="flex justify-center items-center"  > 
+
+
+      <!-- div 1-->       <div class=" " >
+                                        <p>learn to<br>Code</p>
+
+                          </div>
+                          
+
+      <!-- div 2-->        <div class=" " >
+                                         <p>Get<br>Mentored</p>
+                          </div>
+
+
+      <!-- div 3-->       <div class=" " >   
+                                         <p>Build <br>Project</p>
+                          </div>
+
+      <!-- div 4-->       <div class=" " >
+                                          <p>Get<br>Certified</p>
+                          </div>
+
+
+
+                    </div>
+
+      </div>
+
+    <!--footer-->
+      <footer class=" bg-black h-[196px] flex justify-between m-0 items-center px-32 pb-10  ">
+
+                  <div class="flex flex-col relative w-[200px]">
+
+                          <p class="text-[#FFFFFF] text-sm">powered by:</p>
+                    
+                          <img src="./Images/logo/innovar white text.png" class="h-[30px] absolute top-5 right-24"  >
+                  
+
+                          <div class="text-[20px] pt-8  pl-3">
+                                  <a href="https://twitter.com/login?lang=en" target="_blank"  class="text-[#FFFFFF] "><i class='bx bxl-twitter' ></i></a>
+                                  <a href="https://www.instagram.com/accounts/login/" target="_blank"  class="text-[#FFFFFF] "><i class='bx bxl-instagram' ></i></i></a>
+                                  <a href="https://www.facebook.com/" target="_blank" class="text-[#FFFFFF] "><i class='bx bxl-facebook-square' ></i></a>
+                          </div>
+                  </div>
+
+
+        <div class="w-[200px] relative">
+          
+                 <img src="./growthub assets/growthubWhite.png" class="h-[80px] absolute  right-10"  >
+
+                 <div class="text-[40px] pt-16 ">
+                      <a href="https://twitter.com/login?lang=en" target="_blank"  class="text-[#FFFFFF] "><i class='bx bxl-twitter' ></i></a>
+                      <a href="https://www.instagram.com/accounts/login/" target="_blank"  class="text-[#FFFFFF] pl-4"><i class='bx bxl-instagram' ></i></i></a>
+                      <a href="https://www.facebook.com/" target="_blank" class="text-[#FFFFFF] pl-4"><i class='bx bxl-facebook-square' ></i></a>
+                  </div>
+          </div>
+
+        </footer>
+
+
+
+        <div class="grid grid-cols-3 w-[100%] h-5">
+
+            <div class="bg-red"></div>
+            <div class="bg-yellow"></div>
+            <div class="bg-olive"></div>
+
+        </div>
+
+</body>
+</html>
