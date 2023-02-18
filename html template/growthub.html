@@ -55,7 +55,8 @@
  
 
     <!--header -->
-    <header class="bg-deem py-3 px-28 shadow h-16 top-0  z-[1px] flex justify-between items-center w-[100%]">
+   
+      <header class="py-5 px-11 bg-deem shadow h-26 top-0  z-[1px] md:px-28 md:flex md:items-center md:justify-between"  >
 
         <div class="flex justify-between items-center">
             <span class="cursor-pointer">
@@ -68,21 +69,54 @@
             </span>
 
         </div>
+          
+              <nav>
+                          <ul class=" font-serif md:flex md:items-center z-[-1] md:z-auto 
+                              md:static absolute  w-4/12 right-20 md:w-auto 
+                              md:py-0 py-2 md:pl-0 pl-0 md:opacity-100 opacity-0
+                              top-[-400px] transition-all ease-in duration-500 ">
+                          
+                              <li class="mx-4 my-6 md:my-0"> 
+                                  <a href="" class="text-[13px]  text-[#FFFFFF] hover:text-yellow duration-500">How it works</a>
+                              </li>
+                              <li class="mx-4 my-6 md:my-0">
+                                  <a href=""class="text-[13px]  text-[#FFFFFF] hover:text-yellow duration-500">About us</a>
+                              </li>
+                              <li class="mx-4 my-6 md:my-0">
+                                  <a href="./Learn.html" class="text-[13px]  text-[#FFFFFF] hover:text-yellow duration-500">Learning Paths</a>
+                              </li>
 
-        <nav>
-            <ul class=" flex justify-between text-white font-serif">
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> How it works</a></li>
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> About us</a></li>
-                <li class="mx-4 my-6"><a href="./Learn.html" class=" text-[11px] hover:text-yellow "> Learning Paths</a></li>
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Pricing</a></li>
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Sign Up</a></li>
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "> Sign in</a></li>
-                <li class="mx-4 my-6"><a href="" class=" text-[11px] hover:text-yellow "></a></li>
-            </ul>
-        </nav>
+                              <li class="mx-4 my-6 md:my-0">
+                                <a href="" class="text-[13px] text-[#FFFFFF] hover:text-yellow duration-500">Pricing</a>
+                            </li>
 
-    </header>
+                            <li class="mx-4 my-6 md:my-0">
+                              <a href="" class="text-[13px] text-[#FFFFFF] hover:text-yellow duration-500">Sign Up</a>
+                            </li>
 
+                            <li class="mx-4 my-6 md:my-0">
+                              <a href="" class="text-[13px]  text-[#FFFFFF] hover:text-yellow duration-500">Sign In</a>
+                            </li>
+
+                            
+                              
+                          </ul>
+
+              </nav>
+  </header>
+
+    
+
+
+    <script>
+      function Menu(e){
+        let list = document.querySelector('ul');
+  
+        e.name === 'Menu'? (e.name = "close",list.classList.
+        add ('top-[100px]'), list.classList.add('opacity-100')
+        ): (e.name = "Menu" ,list.classList.remove('top-[10px]'),list.classList.remove('opacity-100'))
+      }
+    </script>
 
     <!--chat-->
 
