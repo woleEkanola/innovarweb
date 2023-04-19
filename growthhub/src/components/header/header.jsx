@@ -6,7 +6,7 @@ import React from 'react'
 export const Header = () => {
 
     return(
-        <div className=" flex justify-between items-center bg-black  h-26 top-0 sticky z-0 p-5 w-[100%] max-w-screen-2xl">
+        <div className=" flex justify-between items-center bg-black  h-26 top-0 sticky z-0 p-5 w-[100%] ">
     <img
       src="./images/logo/innovar.png"
       alt="logo"
@@ -32,4 +32,4 @@ export const Header = () => {
     </div>
   </div>
     );
-};
+}
