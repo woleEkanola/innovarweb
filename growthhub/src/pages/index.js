@@ -1,54 +1,17 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { Footer } from '@/components/footer/footer'
+import { Header } from '@/components/header/header'
+Footer
+import Image from 'next/image'
+
+
 
 export default function Home() {
   return (
     <>
-     <div className=" flex justify-between items-center bg-black  h-26 top-0 sticky z-0 p-5 w-[100%] max-w-screen-2xl">
-    <img
-      src="./images/logo/innovar.png"
-      alt="logo"
-      className="w-[90px] ml-20 min "
-    />
-    <div className=" flex mr-[110px]">
-      <ul className="flex mr-28 text-[14px] ">
-        <li className="p-3  text-yellow hover:text-white ">
-          <a href=""> TechLeague </a>
-        </li>
-        <li className="p-3 text-purple hover:text-white">
-          <a href=""> TechFestival </a>
-        </li>
-        <li className="p-3 text-green hover:text-white">
-          <a href=""> GrowthHub </a>
-        </li>
-      </ul>
-      <div>
-        <p className=" text-white">
-          {" "}
-          <span className="font-medium relative bottom-3"> Menu </span>{" "}
-          <i className="bx bx-menu text-4xl text-white cursor-pointer" />
-        </p>
-      </div>
-    </div>
-  </div>
-  {/*innovar container*/}
-  <div className=" bg-black h-[100%] pl-64 pt-56 ">
-    <p className="text-white text-6xl">we are </p>
-    <h1 className="text-white text-8xl font-medium leading-none">INNOVAR</h1>
-    <p className="text-white text-2xl leading-tight">
-      <span className="text-yellow">
-        We implement technology products that fit into your <br />
-        business process seamlessly.
-      </span>{" "}
-      We can build custom made
-      <br />
-      tools as well as deploy off-th shelf products.
-    </p>
-    <p> operation issues.</p>
-  </div>
-  <div className="bg-black h-40" />
+     <Header/>
+  
+  
   {/*yellow part container */}
   <div className="bg-yellow h-[1200px] pl-[260px] pr-64">
     {/*project/image part  */}
@@ -156,65 +119,7 @@ export default function Home() {
     </div>
   </div>
   {/*footer container */}
-  <div className=" bg-black h-[40vh] flex justify-between items-center pl-4 pr-11 pt-4 ">
-    <div className="w-[200px] ">
-      <img src="./Images/logo/innovar white text.png" />
-      <div className="text-[40px] pt-5 pl-3">
-        <a
-          href="https://twitter.com/login?lang=en"
-          target="_blank"
-          className="text-olive "
-        >
-          <i className="bx bxl-twitter" />
-        </a>
-        <a
-          href="https://www.instagram.com/accounts/login/"
-          target="_blank"
-          className="text-olive pl-4"
-        >
-          <i className="bx bxl-instagram" />
-        </a>
-        <a
-          href="https://www.facebook.com/"
-          target="_blank"
-          className="text-olive pl-4"
-        >
-          <i className="bx bxl-facebook-square" />
-        </a>
-      </div>
-    </div>
-    <div className=" text-white font-medium pl-[125px] text-[38px]">
-      <p className="pl-5 leading-[20px] ">
-        Let's <span className="text-gray">Do</span>{" "}
-        <span className="text-yellow">some</span>{" "}
-      </p>
-      <p className="text-yellow ">
-        MAGIC <span className="text-red">Together</span>
-      </p>
-    </div>
-    <form className=" ">
-      <label htmlFor="name">Name*</label>{" "}
-      <i className="fa-regular fa-paper-plane text-olive text-2xl pr-5 " />
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Drop us a message "
-        className="w-[480px] h-[55px] pl-6 text-[17px] font-normal text-gray font-medium 
-          cursor-[pointer] outline-sky-500  outline-[1px] "
-      />
-      <p className="text-white pt-4 pl-[50px] text-[22px] font-medium li">
-        {" "}
-        <i className="bx bxs-file-export text-white text-olive text-3xl pr-[15px] " />{" "}
-        Download the Innovar Brand Brochure
-      </p>
-    </form>
-  </div>
-  <div className="grid grid-cols-3 w-[100%] h-6">
-    <div className="bg-red" />
-    <div className="bg-yellow" />
-    <div className="bg-olive" />
-  </div>
+    <Footer/>
     
     </>
   )
